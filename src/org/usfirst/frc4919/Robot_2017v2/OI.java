@@ -67,17 +67,16 @@ public class OI {
 
         joystick1 = new Joystick(0);
         
-        winchStop = new JoystickButton(joystick1, 1);
-        winchStop.whileHeld(new WinchetStop());
+        winchStop = new JoystickButton(joystick1, 6);
         winchGo = new JoystickButton(joystick1, 1);
         winchGo.whileHeld(new WinchetGo());
-        joystickGearPusherButton = new JoystickButton(joystick1, 1);
+        joystickGearPusherButton = new JoystickButton(joystick1, 2);
         joystickGearPusherButton.whileHeld(new PushGear());
-        joystickGearRetractor = new JoystickButton(joystick1, 1);
+        joystickGearRetractor = new JoystickButton(joystick1, 3);
         joystickGearRetractor.whileHeld(new GearRetractor());
-        joystickGateCloseButton = new JoystickButton(joystick1, 1);
+        joystickGateCloseButton = new JoystickButton(joystick1, 4);
         joystickGateCloseButton.whileHeld(new GearGateClose());
-        joystickGateOpenButton = new JoystickButton(joystick1, 1);
+        joystickGateOpenButton = new JoystickButton(joystick1, 5);
         joystickGateOpenButton.whileHeld(new GearGateOpen());
 
 
