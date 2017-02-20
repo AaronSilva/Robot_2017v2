@@ -74,10 +74,10 @@ public class OI {
         CameraTurner.whileHeld(new CameraTurner());
         joystickGearPusherButton = new JoystickButton(joystick1, 3);
         joystickGearPusherButton.whileHeld(new PushGear());
-        joystickGearRetractor = new JoystickButton(joystick1, 4);
-        joystickGearRetractor.whileHeld(new GearRetractor());
-        joystickGateCloseButton = new JoystickButton(joystick1, 5);
-        joystickGateCloseButton.whileHeld(new GearGateClose());
+        //joystickGearRetractor = new JoystickButton(joystick1, 4);
+        //joystickGearRetractor.whileHeld(new GearRetractor());
+        //joystickGateCloseButton = new JoystickButton(joystick1, 5);
+        //joystickGateCloseButton.whileHeld(new GearGateClose());
         joystickGateOpenButton = new JoystickButton(joystick1, 6);
         joystickGateOpenButton.whileHeld(new GearGateOpen());
         joystickPinPuller = new JoystickButton(joystick1, 7);
@@ -87,10 +87,10 @@ public class OI {
 
         // SmartDashboard Buttons
         SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
-        SmartDashboard.putData("Gear Gate Close", new GearGateClose());
+        //SmartDashboard.putData("Gear Gate Close", new GearGateClose());
         SmartDashboard.putData("Gear Gate Open", new GearGateOpen());
         SmartDashboard.putData("Push Gear", new PushGear());
-        SmartDashboard.putData("Gear Retractor", new GearRetractor());
+        //SmartDashboard.putData("Gear Retractor", new GearRetractor());
         SmartDashboard.putData("Camera Turner", new CameraTurner());
         SmartDashboard.putData("Forward", new Forward());
         SmartDashboard.putData("Reverse", new Reverse());

@@ -45,5 +45,14 @@ public class GearPush extends Subsystem {
         // Set the default command for a subsystem here.
         // setDefaultCommand(new MySpecialCommand());
     }
+    public void open() {
+    	gearPushSolenoid1.set(DoubleSolenoid.Value.kForward);
+    }
+    public void close() {
+    	gearPushSolenoid1.set(DoubleSolenoid.Value.kReverse);
+    }
+    public void stop() {
+    	gearPushSolenoid1.set(DoubleSolenoid.Value.kOff);	
+    }
 }
 
