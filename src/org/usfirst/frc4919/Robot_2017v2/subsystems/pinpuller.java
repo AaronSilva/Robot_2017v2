@@ -51,10 +51,10 @@ public class pinpuller extends Subsystem {
         // Set the default command for a subsystem here.
     }    // setDefaultCommand(new MySpecialCommand());
     	
-    public void down() {
+    public void in() {
     	pinmotorrelay.set(Value.kForward);
     }
-    public void up() {
+    public void out() {
     	pinmotorrelay.set(Value.kReverse);
     }
     public void stop() {
