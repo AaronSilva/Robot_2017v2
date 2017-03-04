@@ -54,7 +54,7 @@ public class GearGateOpen extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Timer.delay(3);
+    	Timer.delay(5);
     	Robot.gearBoxGate.close();
 
     }

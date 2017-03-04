@@ -39,7 +39,7 @@ public class PullPin extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
     	setTimeout(0.1);
-    	Robot.pinpuller.out();
+    	Robot.pinpuller.in();
     }
 
     // Called repeatedly when this Command is scheduled to run
@@ -53,7 +53,7 @@ public class PullPin extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.pinpuller.in();
+    	Robot.pinpuller.out();
 
     }
 
