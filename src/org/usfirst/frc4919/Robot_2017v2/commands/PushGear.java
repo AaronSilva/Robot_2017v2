@@ -10,7 +10,6 @@
 
 
 package org.usfirst.frc4919.Robot_2017v2.commands;
-import edu.wpi.first.wpilibj.Timer;
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc4919.Robot_2017v2.Robot;
 
@@ -52,8 +51,6 @@ public class PushGear extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Timer.delay(1);
-    	Robot.gearPush.close();
     }
 
     // Called when another command which requires one or more of the same

@@ -65,8 +65,8 @@ public class drivetrain extends Subsystem {
     	robotDrive21.arcadeDrive(-1.0, 0);
     }	
     public void stop() {
-       	robotDrive21.drive(0, 0);    	
-    } 
+       	robotDrive21.drive(0, 0);   
+    }
 }
 
    

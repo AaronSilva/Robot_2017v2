@@ -57,8 +57,9 @@ public class RobotMap {
         LiveWindow.addActuator("drive train", "Right", (Talon) drivetrainRight);
         
         drivetrainLeft = new Talon(1);
+        drivetrainLeft.setInverted(true);
         LiveWindow.addActuator("drive train", "Left", (Talon) drivetrainLeft);
-                
+       
         drivetrainRobotDrive21 = new RobotDrive(drivetrainRight, drivetrainLeft);
         
         //drivetrainRobotDrive21.setInvertedMotor(RobotDrive.MotorType.kFrontLeft, true);

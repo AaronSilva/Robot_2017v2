@@ -46,7 +46,7 @@ public class ClimbingSubsystem extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     public void winchGo () {
-    		Robot.climbingSubsystem.winch.set(1.0);
+    		Robot.climbingSubsystem.winch.set(-0.6);
     }
     public void winchStop () {
 		Robot.climbingSubsystem.winch.set(0.0);

@@ -72,25 +72,25 @@ public class OI {
         winchGo.whileHeld(new WinchetGo());
         CameraTurner = new JoystickButton(joystick1, 2);
         CameraTurner.whileHeld(new CameraTurner());
-        joystickGearPusherButton = new JoystickButton(joystick1, 3);
+        joystickGearPusherButton = new JoystickButton(joystick1, 9);
         joystickGearPusherButton.whileHeld(new PushGear());
-        //joystickGearRetractor = new JoystickButton(joystick1, 4);
-        //joystickGearRetractor.whileHeld(new GearRetractor());
-        //joystickGateCloseButton = new JoystickButton(joystick1, 5);
-        //joystickGateCloseButton.whileHeld(new GearGateClose());
-        joystickGateOpenButton = new JoystickButton(joystick1, 6);
+        joystickGearRetractor = new JoystickButton(joystick1, 10);
+        joystickGearRetractor.whileHeld(new ReturnPush());
+        joystickGateCloseButton = new JoystickButton(joystick1, 12);
+        joystickGateCloseButton.whileHeld(new GearGateClose());
+        joystickGateOpenButton = new JoystickButton(joystick1, 11);
         joystickGateOpenButton.whileHeld(new GearGateOpen());
-        joystickPinPuller = new JoystickButton(joystick1, 7);
-        joystickPinPuller.whileHeld(new PullPin());
+        //joystickPinPuller = new JoystickButton(joystick1, 9);
+        //joystickPinPuller.whileHeld(new PullPin());
 
 
 
         // SmartDashboard Buttons
         SmartDashboard.putData("Autonomous Command", new AutonomousCommand());
-        //SmartDashboard.putData("Gear Gate Close", new GearGateClose());
+        SmartDashboard.putData("Gear Gate Close", new GearGateClose());
         SmartDashboard.putData("Gear Gate Open", new GearGateOpen());
         SmartDashboard.putData("Push Gear", new PushGear());
-        //SmartDashboard.putData("Gear Retractor", new GearRetractor());
+        SmartDashboard.putData("Push Retractor", new ReturnPush());
         SmartDashboard.putData("Camera Turner", new CameraTurner());
         SmartDashboard.putData("Forward", new Forward());
         SmartDashboard.putData("Reverse", new Reverse());

@@ -46,10 +46,10 @@ public class GearPush extends Subsystem {
         // setDefaultCommand(new MySpecialCommand());
     }
     public void open() {
-    	gearPushSolenoid1.set(DoubleSolenoid.Value.kForward);
+    	gearPushSolenoid1.set(DoubleSolenoid.Value.kReverse);
     }
     public void close() {
-    	gearPushSolenoid1.set(DoubleSolenoid.Value.kReverse);
+    	gearPushSolenoid1.set(DoubleSolenoid.Value.kForward);
     }
     public void stop() {
     	gearPushSolenoid1.set(DoubleSolenoid.Value.kOff);	
